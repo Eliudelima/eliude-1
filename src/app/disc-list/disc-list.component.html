@@ -1,0 +1,12 @@
+<h2>{{listLabel}}</h2>
+
+<div *ngFor="let disc of discos;index as i">
+  <h3>
+    <a [title]="'Detalhes de '+disc.name"
+      [routerLink]="['/discos', i]">
+    {{disc.name}}
+    </a>
+  </h3>
+   
+ 
+</div>
